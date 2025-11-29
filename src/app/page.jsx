@@ -11,10 +11,12 @@ import ProjectCard from "@/components/common/ProjectCard";
 export default function Home() {
 
   return (
-    <div className='min-h-screen relative text-white'>
+    <div className='flex flex-wrap justify-center items-center min-h-screen relative gap-6 p-4 bg-gradient-to-b from-white/10 via-white/5 to-white/10'>
       <UVCanvasBackground className="absolute inset-0 z-0" />
       {/*<Carousel className="relative z-10" />*/}
-      <ProjectCard className="relative z-10" project={projectData[3]} />
+      {projectData.map((project, index) => (
+        <ProjectCard key={index} project={project} />
+      ))}
     </div>
   );
 }

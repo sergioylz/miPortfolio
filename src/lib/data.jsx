@@ -26,5 +26,12 @@ export const projectData = [
     description: 'Practicar tailwind.',
     image: '/Tailwind.png',
     slug: '/tailwind',
+    },
+    {
+    id: 4,
+    title: 'Spotify Lists',
+    description: 'Sportify Taste Mixer.',
+    image: '/Spotify.png',
+    slug: '/spotify',
     }
 ];
